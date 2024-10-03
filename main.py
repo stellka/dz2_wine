@@ -34,7 +34,7 @@ df_red_wine_no_outliers = remove_outliers(df_red_wine, 'quality')
 print("Количество строк после удаления выбросов (красное вино):", len(df_red_wine_no_outliers))
 
 # График распределения по качеству
-sns.distplot(df_red_wine_no_outliers['quality'], kde=False)
+sns.histplot(df_red_wine_no_outliers['quality'], kde=False)
 plt.title('Распределение качества красного вина')
 plt.xlabel('Качество')
 plt.ylabel('Частота')
